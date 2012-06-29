@@ -20,7 +20,7 @@ namespace :deploy do
   task :setup_config, roles: :app do
     sudo "ln -nfs #{current_path}/config/apache.conf /etc/apache2/sites-available/#{application}"
     run "mkdir -p #{shared_path}/config"
-    #run "ln -s /home/#{user}/Zend #{current_path}/library/Zend"
+    run "ln -s /home/deployer/Zend/  #{current_path}/library/Zend "
   end
   after "deploy:setup", "deploy:setup_config"
  
