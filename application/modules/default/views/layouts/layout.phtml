@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR" xml:lang="pt-BR">
+<head>
+  <?php echo $this->headMeta(); ?>
+  <title>Application Delivery</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:regular,italic,bold,bolditalic' rel='stylesheet' type='text/css' />
+  <link type="text/css" href="<?php echo $this->baseUrl("stylesheets/application.css"); ?>" rel="StyleSheet" />
+  <link type="text/css" href="<?php echo $this->baseUrl("stylesheets/form.css"); ?>" rel="StyleSheet" />
+
+  <script type="text/javascript">
+    var BASEURL = "<?php echo $this->baseUrl("/"); ?>";
+  </script>
+</head>
+<body>
+  <div id="geral">
+    <div id="topo">
+      <h1>Delivery Application</h1>
+      <ul class="navigation" id="menu">
+        <li><a href="<?php echo $this->url(array('controller' => 'index', 'module' => 'default'), null, 1); ?>">Home</a></li>
+        <li><a href="<?php echo $this->url(array('controller' => 'auth', 'action' => 'logout', 'module' => 'default'), null, 1); ?>">Logout</a></li>
+        <li><a href="<?php echo $this->url(array('controller' => 'signup', 'module' => 'default'), null, 1); ?>">Cadastro</a></li>
+        <li><a href="<?php echo $this->url(array('controller' => 'auth', 'module' => 'default'), null, 1); ?>">Login</a></li>
+      </ul>
+    </div>
+    <div id="meio">
+      <div id="conteudo">
+        <?php echo $this->Layout()->content; ?>
+      </div>
+    </div>
+    <div id="rodape">
+      <div id="rodape-info">
+        Delivery Application - Todos os direitos reservados.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
