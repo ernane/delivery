@@ -1,2 +1,15 @@
 
+S generated files #
+# ######################
+.DS_Store*
+ehthumbs.db
+Icon?
+Thumbs.db
+db/*.sqlite3
+log/*.log
+tmp/
+.sass-cache/
+bin
+*.swp
+*.swo
 library/Zend/

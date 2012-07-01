@@ -1,0 +1,7 @@
+<h2>Editando produto</h2>
+<?php if (!isset($this->error)): ?>
+    <?php echo $this->form; ?>
+    <div class="clearfix"></div>
+<?php elseif ($this->error == false): ?>
+    <p>Dados salvos com sucesso.</p>
+<?php endif; ?>
