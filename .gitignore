@@ -13,4 +13,4 @@ bin
 *.swp
 *.swo
 library/Zend
-config/deploy.rb
+#config/deploy.rb

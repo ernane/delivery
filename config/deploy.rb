@@ -26,7 +26,7 @@ namespace :deploy do
   task :setup_zend, roles: :web do
     run "ln -s /home/deployer/Zend/  #{current_path}/library/Zend "
   end
-  after "deploy", "deploy:setup_config"
+  after "deploy", "deploy:setup_zend"
  
 
   desc "Make sure local git is in sync with remote."
