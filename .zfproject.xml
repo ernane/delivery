@@ -18,9 +18,11 @@
       <modelsDirectory>
         <dbTableDirectory>
           <dbTableFile dbTableName="User"/>
+          <dbTableFile dbTableName="Produto"/>
         </dbTableDirectory>
         <modelFile modelName="User"/>
         <modelFile modelName="Abstract"/>
+        <modelFile modelName="Produto"/>
       </modelsDirectory>
       <modulesDirectory>
         <moduleDirectory moduleName="default">

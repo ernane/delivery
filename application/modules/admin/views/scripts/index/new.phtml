@@ -1,0 +1,7 @@
+<h2>Cadastro de produtos</h2>
+<?php if (!isset($this->error)): ?>
+    <?php echo $this->form; ?>
+    <div class="clearfix"></div>
+<?php elseif ($this->error == false): ?>
+    <p>Dados cadastrados com sucesso.</p>
+<?php endif; ?>
