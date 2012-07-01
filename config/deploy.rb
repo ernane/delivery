@@ -20,9 +20,13 @@ namespace :deploy do
   task :setup_config, roles: :app do
     sudo "ln -nfs #{current_path}/config/apache.conf /etc/apache2/sites-available/#{application}"
     run "mkdir -p #{shared_path}/config"
-    run "ln -s /home/deployer/Zend/  #{current_path}/library/Zend "
   end
   after "deploy:setup", "deploy:setup_config"
+  
+  task :setup_zend, roles: :web do
+    run "ln -s /home/deployer/Zend/  #{current_path}/library/Zend "
+  end
+  after "deploy", "deploy:setup_config"
  
 
   desc "Make sure local git is in sync with remote."
